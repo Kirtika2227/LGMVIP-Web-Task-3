@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:#F2D8D8;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #FFC6AC;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+}
+
+.form-container,
+.display-container {
+  flex: 1;
+  background-color: #FFF6DC;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons input,
+.buttons button {
+  margin-right: 10px;
+}
+
+.buttons button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #c82333;
+}
+/* Your existing CSS styles */
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+.data-table td {
+  white-space: pre-line;
+}
+
+

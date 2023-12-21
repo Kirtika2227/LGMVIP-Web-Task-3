@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+  <div class="header">
+    <h2> Student Enrollment Form </h2>
+  </div>
+  
+    <div class="container">
+        <div class="form-container">
+            <form id="registrationForm" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website">
+
+                <label for="imageLink">Image Link:</label>
+                <input type="url" id="imageLink" name="imageLink">
+
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+
+                <label>Skills:</label>
+                <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+
+                <div class="buttons">
+                    <input type="submit" value="Enroll Student">
+                    <button type="button" onclick="clearForm()">Clear Data</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="display-container" id="displayData"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
